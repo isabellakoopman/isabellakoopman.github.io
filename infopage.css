@@ -35,6 +35,21 @@ hr {
  margin-bottom: 20px;
 }
 
+
+.main-box {
+  max-height: 500px;
+  display: block;
+  border: 1px solid grey;
+  margin: 0;
+  margin-bottom: 0px;
+    padding: 0px;
+    margin: 0px auto;
+    border-radius: 12px;
+    overflow: hidden; 
+    drop-shadow: 0 0 10px rgba(0, 255, 0, 0.2);
+    transition: transform 0.3s ease-in-out, drop-shadow 0.3s ease-in-out;
+}
+
 .flex-container1 {
   display: flex;
   flex-wrap: wrap;
@@ -83,7 +98,7 @@ img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  max-width: 50%;
+  width: 100%;
   transition: transform 0.4s ease;
 }
 
@@ -127,24 +142,3 @@ footer {
 .done-toggle:checked + .done-label::before {
   content: "✔ ";
 }
-
-.main-box {
-  width: 100%;
-  aspect-ratio: 16 / 9; 
-  max-height: none;      
-  position: relative;
-  overflow: hidden;
-  border-radius: 12px;
-
-  @media (max-width: 600px) {
-  .main-box {
-    aspect-ratio: 4 / 3;
-  }
-  .main-box img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-}
-
-
