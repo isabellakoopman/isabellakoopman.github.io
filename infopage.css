@@ -142,3 +142,20 @@ footer {
 .done-toggle:checked + .done-label::before {
   content: "✔ ";
 }
+
+.main-box {
+  width: 100%;
+  aspect-ratio: 16 / 9; 
+  max-height: none;      
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+
+.main-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+
+
