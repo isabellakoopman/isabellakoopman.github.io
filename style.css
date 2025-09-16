@@ -1,0 +1,122 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: SF PRO;
+  margin: 75px 20px;
+}
+
+/* header */
+
+body h1 {
+  margin: 0 10px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.subtitle{
+text-align: center;
+}
+
+body p {
+  margin-bottom: 20px;
+} 
+
+hr {
+ border: none; /* Remove default border */
+ height: 1px; /* Set line thickness */
+ background-color: grey; /* Set line color */
+ margin: 20px 10px;
+ margin-bottom: 50px; /* Add space above and below */
+}
+
+
+/* Content Cards */
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main-box {
+  width: 200px;
+  border: 1px solid grey;
+  margin: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+    padding: 20px;
+    margin: 20px auto;
+    width: 300px;
+    color: black;
+    drop-shadow: 0 0 10px rgba(0, 255, 0, 0.2);
+    transition: transform 0.3s ease-in-out, drop-shadow 0.3s ease-in-out;
+}
+
+.main-box {
+  display: flex;
+  flex-direction: column;   /* stack heading, text, then image */
+  justify-content: space-between; /* pushes image to the bottom */
+}
+
+.main-box img {
+  width: 100%;        /* full width of the card */
+  height: auto;       /* keep natural aspect ratio */
+  margin-top: auto;   /* ensures image stays at the bottom */
+  object-fit: cover;  /* optional: crop if you set a max-height */
+}
+.main-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.4);
+
+main h3 {
+  margin: 10px;
+  margin-top: 10px;
+  margin-bottom: 3px;
+}
+
+main p {
+  margin-bottom: 10px;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+footer {
+  background-color: #fffff;
+  text-align: left;
+}
+
+.main-box > a.card-link {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  color: inherit;
+}
+
+.main-box { position: relative; }
+
+.card-overlay {
+  position: absolute;
+  inset: 0;           /* top:0; right:0; bottom:0; left:0 */
+  z-index: 1;
+  text-indent: -9999px;  /* hide any accidental text */
+}
+
+/* keep your hover effect on the box itself */
+.main-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(0, 255, 0, 0.4);
+}
+.suggestions { position: relative; }
+.suggestions .card-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  text-indent: -9999px;
