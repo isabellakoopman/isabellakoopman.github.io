@@ -44,10 +44,15 @@ hr {
   margin-bottom: 0px;
     padding: 0px;
     margin: 0px auto;
-    border-radius: 12px;
-    overflow: hidden; 
     drop-shadow: 0 0 10px rgba(0, 255, 0, 0.2);
     transition: transform 0.3s ease-in-out, drop-shadow 0.3s ease-in-out;
+  overflow: hidden;
+  border-radius: > 12px;
+  background-image: url( 'plant 2.jpg');
+  height:500px;
+  background-size: cover;
+  background-repeat:no-repeat;
+  background-position: • center;
 }
 
 .flex-container1 {
